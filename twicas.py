@@ -9,7 +9,7 @@ response = requests.get(url, headers=headers)
 question_results = response.content
 
 #idとquestion部分の抽出 
-table = text.maketrans({
+table = ({
     '"': '', #左が置換したい文字、右が新しい文字。
     "'": '', #左が置換したい文字、右が新しい文字。
     "{":'',
